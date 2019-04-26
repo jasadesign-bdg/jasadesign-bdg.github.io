@@ -52,7 +52,7 @@
         suffixAgo: "",
         suffixFromNow: "Baru saja",
         inPast: 'any moment now',
-        seconds: "less than a minute",
+        seconds: "Beberapa detik yang lalu",
         minute: "1 menit yang lalu",
         minutes: "%d Menit yang lalu",
         hour: "1 jam yang lalu",
