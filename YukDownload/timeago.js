@@ -51,7 +51,7 @@
         prefixFromNow: null,
         suffixAgo: "",
         suffixFromNow: "Baru saja",
-        inPast: 'any moment now',
+        inPast: 'Sekarang',
         seconds: "Beberapa detik yang lalu",
         minute: "1 menit yang lalu",
         minutes: "%d Menit yang lalu",
