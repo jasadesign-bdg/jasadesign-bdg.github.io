@@ -109,6 +109,12 @@ function showRecentComments(json) {
 				break;
 			}
 		}
+		var idComment = link.split('v=')[1];
+          var ampersandPosition = idComment.indexOf('&');
+          if(ampersandPosition != -1) {
+            idComment = video_id.substring(0, ampersandPosition);
+          }
+
 		var dash = link.lastIndexOf('/') + 1,
 			dot = link.lastIndexOf('.'),
 			title = link.split('-').join(" ").substring(dash, dot) + '&hellip;';
@@ -120,7 +126,7 @@ function showRecentComments(json) {
 		content = ("content" in entry[i]) ? entry[i].content.$t.replace(/<br ?\/?>/ig, " ").replace(/<.*?>/g, "").replace(/[<>]/g, "") : "",
 		nt = (co.new_tab_link) ? ' target="_blank"' : '';
 		content = (content.length > co.summary) ? content.substring(0, co.summary) + '&hellip;' : content;
-		skeleton += '<li>';
+		skeleton += '<li data-id="'+idComment+'">';
 		skeleton += '<a class="item1" href="' + profile + '" target="_blank" title="' + name + '"><img src="' + avatar + '"></a>';
 		skeleton += '<a class="item2" href='+link+'>';
 		skeleton += '<span class="rCommHeader"><b>' + name + '</b> mengomentari <b>'+title+'</b></span>';
