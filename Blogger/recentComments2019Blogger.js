@@ -59,10 +59,12 @@ function showRecentComments(json) {
 	if (oldCount < total) {
 		if (co.alert === true) {
 			alert((total - oldCount) + co.new_cm);
+			document.title = '(' + (total - oldCount) + co.new_cm + ') ' + doc_title;
 		} else if (co.alert === false) {
 			document.title = '(' + (total - oldCount) + co.new_cm + ') ' + doc_title;
 		} else {
 			co.alert((total - oldCount), co.new_cm);
+			document.title = '(' + (total - oldCount) + co.new_cm + ') ' + doc_title;
 		}
 	}
 
