@@ -154,7 +154,7 @@ function showRecentComments(json) {
 	}, co.interval);
 })();
 
-$(window).bind('load',function(){
+$(document).ready(function(){
   $('img').each(function(){
     var url = $(this).attr('data-src');
     $(this).attr('src',url);
