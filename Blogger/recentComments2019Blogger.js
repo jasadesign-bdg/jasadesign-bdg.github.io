@@ -153,3 +153,11 @@ function showRecentComments(json) {
 		head.appendChild(newScript);
 	}, co.interval);
 })();
+
+$(window).bind('load',function(){
+  $('img').each(function(){
+    var url = $(this).attr('data-src');
+    $(this).attr('src',url);
+    $(this).removeAttr('data-src');
+  });
+});
