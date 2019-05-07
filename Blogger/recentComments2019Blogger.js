@@ -122,10 +122,10 @@ function showRecentComments(json) {
 		content = (content.length > co.summary) ? content.substring(0, co.summary) + '&hellip;' : content;
 		skeleton += '<li>';
 		skeleton += '<a class="item1" href="' + profile + '" target="_blank" title="' + name + '"><img alt="Loading..." src="' + avatar + '"></a>';
-		skeleton += '<div class="item2">';
-		skeleton += '<div class="rCommHeader"><a href='+link+'><b>' + name + '</b> mengomentari <b>'+title+'</b></a></div>';
-		skeleton += '<div class="rCommText">"' + content + '"<br/><small style="opacity:.8;white-space:nowrap;"><i class="icon ion-ios-chatboxes" style="font-size:150%;"></i> &nbsp; <a href='+link+'>' + timeAgo(date) + '</a></small></div>';
-		skeleton += '</div>';
+		skeleton += '<a class="item2" href='+link+'>';
+		skeleton += '<span class="rCommHeader"><b>' + name + '</b> mengomentari <b>'+title+'</b></span>';
+		skeleton += '<span class="rCommText">"' + content + '"<br/><small style="opacity:.8;white-space:nowrap;"><i class="icon ion-ios-chatboxes" style="font-size:150%;"></i> &nbsp; ' + timeAgo(date) + '</small></span>';
+		skeleton += '</a>';
 		skeleton += '</li>';
 	}
 	skeleton += '</ul>';
