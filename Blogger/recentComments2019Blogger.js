@@ -109,8 +109,8 @@ function showRecentComments(json) {
 				break;
 			}
 		}
-		var idComment = $(link).prop("hash");
-
+		var idComment = link.prop("hash");
+		
 		var dash = link.lastIndexOf('/') + 1,
 			dot = link.lastIndexOf('.'),
 			title = link.split('-').join(" ").substring(dash, dot) + '&hellip;';
