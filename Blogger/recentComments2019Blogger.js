@@ -77,7 +77,7 @@ function showRecentComments(json) {
         var elapsed = current - previous;
         
         if (elapsed < msPerMinute) {
-             return Math.round(elapsed/1000) + ' detik' + ago;   
+             return Math.round(elapsed/1000) + ' detik ' + ago;   
         }
         
         else if (elapsed < msPerHour) {
