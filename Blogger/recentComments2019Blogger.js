@@ -121,10 +121,14 @@ function showRecentComments(json) {
 		nt = (co.new_tab_link) ? ' target="_blank"' : '';
 		content = (content.length > co.summary) ? content.substring(0, co.summary) + '&hellip;' : content;
 		skeleton += '<li>';
-		skeleton += '<div class="cm-header"><strong><a href="' + link + '" title="' + title + '"' + nt + '>' + name + '</a>, ' + timeAgo(date) + '</strong></div>';
-		skeleton += '<div class="cm-content"><a href="' + profile + '" title="' + name + '"' + nt + '><img alt="Loading..." style="width:' + co.t_w + 'px;height:' + co.t_h + 'px;" src="' + avatar + '"></a>';
-		skeleton += '<span class="cm-text">' + content + '</span>';
-		skeleton += '</div></li>';
+		skeleton += '<div class="item1">';
+		skeleton += '<a href="' + profile + '" title="' + name + '"' + nt + '><img alt="Loading..." style="width:' + co.t_w + 'px;height:' + co.t_h + 'px;" src="' + avatar + '"></a>';
+		skeleton += '</div>';
+		skeleton += '<div class="item2">';
+		skeleton += '<div class="cm-header"><strong><a href="' + link + '" title="' + title + '"' + nt + '>' + name + '</a></strong> <small>' + timeAgo(date) + '</small></div>';
+		skeleton += '<div class="cm-text">' + content + '</div>';
+		skeleton += '</div>';
+		skeleton += '</li>';
 	}
 	skeleton += '</ul>';
 	document.getElementById(co.ct_id).innerHTML = skeleton;
