@@ -114,7 +114,7 @@ function showRecentComments(json) {
 			title = link.split('-').join(" ").substring(dash, dot) + '&hellip;';
 		author = entry[i].author[0],
 		name = author.name.$t,
-		avatar = author.gd$image.src.replace(/\/s[0-9]+(\-c|\/)/, "/s" + co.t_w + "$1").replace(/http\:\/\/www.google.com\/url\?source\=imglanding(.*?)q\=/i, "").replace(/\.(jpg|jpeg|png|bmp|gif)(.*?)$/i, ".$1"),
+		avatar = author.gd$image.src.replace(/\/s[0-9]+(\-c|\/)/, "/s" + co.t_w + "$1-c").replace(/http\:\/\/www.google.com\/url\?source\=imglanding(.*?)q\=/i, "").replace(/\.(jpg|jpeg|png|bmp|gif)(.*?)$/i, ".$1"),
 		profile = (author.uri) ? author.uri.$t : "#nope",
 		date = entry[i].gd$extendedProperty[1].value,
 		content = ("content" in entry[i]) ? entry[i].content.$t.replace(/<br ?\/?>/ig, " ").replace(/<.*?>/g, "").replace(/[<>]/g, "") : "",
