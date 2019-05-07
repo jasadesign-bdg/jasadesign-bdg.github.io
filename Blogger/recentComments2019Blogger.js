@@ -65,7 +65,41 @@ function showRecentComments(json) {
 			co.alert((total - oldCount), co.new_cm);
 		}
 	}
+	function timeAgo(timeStamp) {
+        var previous = new Date(timeStamp);
+        var current = new Date();
+        var msPerMinute = 60 * 1000;
+        var msPerHour = msPerMinute * 60;
+        var msPerDay = msPerHour * 24;
+        var msPerMonth = msPerDay * 30;
+        var msPerYear = msPerDay * 365;
+        var ago = 'yang lalu';
+        var elapsed = current - previous;
+        
+        if (elapsed < msPerMinute) {
+             return Math.round(elapsed/1000) + ' detik' + ago;   
+        }
+        
+        else if (elapsed < msPerHour) {
+             return Math.round(elapsed/msPerMinute) + ' menit ' + ago;   
+        }
+        
+        else if (elapsed < msPerDay ) {
+             return Math.round(elapsed/msPerHour ) + ' jam ' + ago;   
+        }
 
+        else if (elapsed < msPerMonth) {
+             return Math.round(elapsed/msPerDay) + ' hari ' + ago;   
+        }
+        
+        else if (elapsed < msPerYear) {
+             return Math.round(elapsed/msPerMonth) + ' bulan ' + ago;   
+        }
+        
+        else {
+             return Math.round(elapsed/msPerYear ) + ' tahun ' + ago;   
+        }
+    }
 	// Just a recent comments widget
 	skeleton = '<ul class="cm-outer">';
 	for (var i = 0; i < entry.length; i++) {
@@ -87,7 +121,7 @@ function showRecentComments(json) {
 		nt = (co.new_tab_link) ? ' target="_blank"' : '';
 		content = (content.length > co.summary) ? content.substring(0, co.summary) + '&hellip;' : content;
 		skeleton += '<li>';
-		skeleton += '<div class="cm-header"><strong><a href="' + link + '" title="' + title + '"' + nt + '>' + name + '</a>, ' + date + '</strong></div>';
+		skeleton += '<div class="cm-header"><strong><a href="' + link + '" title="' + title + '"' + nt + '>' + name + '</a>, ' + timeAgo(date) + '</strong></div>';
 		skeleton += '<div class="cm-content"><a href="' + profile + '" title="' + name + '"' + nt + '><img alt="Loading..." style="width:' + co.t_w + 'px;height:' + co.t_h + 'px;" src="' + avatar + '"></a>';
 		skeleton += '<span class="cm-text">' + content + '</span>';
 		skeleton += '</div></li>';
