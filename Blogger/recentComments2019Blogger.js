@@ -101,7 +101,7 @@ function showRecentComments(json) {
         }
     }
 	// Just a recent comments widget
-	skeleton = '<ul class="cm-outer">';
+	skeleton = '<ul class="rCommOuter">';
 	for (var i = 0; i < entry.length; i++) {
 		for (var j = 0; j < entry[i].link.length; j++) {
 			if (entry[i].link[j].rel == 'alternate') {
@@ -125,8 +125,8 @@ function showRecentComments(json) {
 		skeleton += '<a href="' + profile + '" title="' + name + '"' + nt + '><img alt="Loading..." style="width:' + co.t_w + 'px;height:' + co.t_h + 'px;" src="' + avatar + '"></a>';
 		skeleton += '</div>';
 		skeleton += '<div class="item2">';
-		skeleton += '<div class="cm-header"><strong><a href="' + link + '" title="' + title + '"' + nt + '>' + name + '</a></strong> <small>' + timeAgo(date) + '</small></div>';
-		skeleton += '<div class="cm-text">' + content + '</div>';
+		skeleton += '<div class="rCommHeader"><strong><a href="' + link + '" title="' + title + '"' + nt + '>' + name + '</a></strong> <small>' + timeAgo(date) + '</small></div>';
+		skeleton += '<div class="rCommText">' + content + '</div>';
 		skeleton += '</div>';
 		skeleton += '</li>';
 	}
@@ -142,15 +142,15 @@ function showRecentComments(json) {
 		script = document.createElement('script'),
 		co = cm_config_defaults;
 	script.type = "text/javascript";
-	script.id = "cm-feed-script";
+	script.id = "rCommFeed-script";
 	script.src = co.home_page + "/feeds/comments/default?alt=json-in-script&redirect=false&max-results=" + co.max_result + "&callback=showRecentComments";
 	head.appendChild(script);
 	setInterval(function () {
 		var newScript = document.createElement('script');
 		newScript.type = "text/javascript";
-		newScript.id = "cm-feed-script";
+		newScript.id = "rCommFeed-script";
 		newScript.src = co.home_page + "/feeds/comments/default?alt=json-in-script&redirect=false&max-results=" + co.max_result + "&callback=showRecentComments";
-		var oldScript = document.getElementById('cm-feed-script');
+		var oldScript = document.getElementById('rCommFeed-script');
 		oldScript.parentNode.removeChild(oldScript);
 		head.appendChild(newScript);
 	}, co.interval);
