@@ -121,7 +121,7 @@ function showRecentComments(json) {
 		nt = (co.new_tab_link) ? ' target="_blank"' : '';
 		content = (content.length > co.summary) ? content.substring(0, co.summary) + '&hellip;' : content;
 		skeleton += '<li>';
-		skeleton += '<a class="item1" href="' + profile + '" title="' + name + '"' + nt + '><img alt="Loading..." style="width:' + co.t_w + 'px;height:' + co.t_h + 'px;" src="' + avatar + '"></a>';
+		skeleton += '<a class="item1" href="' + profile + '" title="' + name + '"' + nt + '><img alt="Loading..." src="' + avatar + '"></a>';
 		skeleton += '<div class="item2">';
 		skeleton += '<div class="rCommHeader"><strong><a href="' + link + '" title="' + title + '"' + nt + '>' + name + '</a></strong> <small style="opacity:.8;white-space:nowrap;">&nbsp;&bull;&nbsp; ' + timeAgo(date) + '</small></div>';
 		skeleton += '<div class="rCommText">' + content + '</div>';
