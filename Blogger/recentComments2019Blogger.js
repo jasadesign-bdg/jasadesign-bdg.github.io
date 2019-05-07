@@ -109,7 +109,7 @@ function showRecentComments(json) {
 				break;
 			}
 		}
-		var idComment = link.split('v=')[1];
+		var idComment = link.split('showComment=')[1];
           var ampersandPosition = idComment.indexOf('&');
           if(ampersandPosition != -1) {
             idComment = video_id.substring(0, ampersandPosition);
