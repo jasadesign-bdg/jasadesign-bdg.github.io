@@ -123,7 +123,7 @@ function showRecentComments(json) {
 		skeleton += '<li>';
 		skeleton += '<a class="item1" href="' + profile + '" target="_blank" title="' + name + '"><img alt="Loading..." src="' + avatar + '"></a>';
 		skeleton += '<div class="item2">';
-		skeleton += '<div class="rCommHeader"><strong><a href="' + profile + '" target="_blank" title="' + title + '">' + name + '</a></strong> <a href='+link+'>mengomentari <b>'+title+'</b></a></div>';
+		skeleton += '<div class="rCommHeader"><a href='+link+'><b>' + name + '</b> mengomentari <b>'+title+'</b></a></div>';
 		skeleton += '<div class="rCommText">"' + content + '"<br/><small style="opacity:.8;white-space:nowrap;">&nbsp;&bull;&nbsp; <a href='+link+'>' + timeAgo(date) + '</a></small></div>';
 		skeleton += '</div>';
 		skeleton += '</li>';
