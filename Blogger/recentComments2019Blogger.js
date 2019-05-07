@@ -4,8 +4,8 @@
 var cm_config_defaults = {
 	home_page: '//' + window.location.hostname,
 	max_result: 7,
-	t_w: 32,
-	t_h: 32,
+	t_w: 40,
+	t_h: 40,
 	summary: 9999,
 	new_tab_link: true,
 	ct_id: "comments-container",
@@ -121,9 +121,7 @@ function showRecentComments(json) {
 		nt = (co.new_tab_link) ? ' target="_blank"' : '';
 		content = (content.length > co.summary) ? content.substring(0, co.summary) + '&hellip;' : content;
 		skeleton += '<li>';
-		skeleton += '<div class="item1">';
-		skeleton += '<a href="' + profile + '" title="' + name + '"' + nt + '><img alt="Loading..." style="width:' + co.t_w + 'px;height:' + co.t_h + 'px;" src="' + avatar + '"></a>';
-		skeleton += '</div>';
+		skeleton += '<a class="item1" href="' + profile + '" title="' + name + '"' + nt + '><img alt="Loading..." style="width:' + co.t_w + 'px;height:' + co.t_h + 'px;" src="' + avatar + '"></a>';
 		skeleton += '<div class="item2">';
 		skeleton += '<div class="rCommHeader"><strong><a href="' + link + '" title="' + title + '"' + nt + '>' + name + '</a></strong> <small>' + timeAgo(date) + '</small></div>';
 		skeleton += '<div class="rCommText">' + content + '</div>';
