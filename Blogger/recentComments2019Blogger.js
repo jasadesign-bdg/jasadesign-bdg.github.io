@@ -139,7 +139,6 @@ function showRecentComments(json) {
 $(document).on('click','.rCommOuter li',function(){
 	var id = $(this).data('hash');
 	$('html, body').animate({scrollTop: $(id).offset().top - 80}, 1000);
-	$('.blog_notif').removeClass('open');
 });
 (function () {
 	var head = document.getElementsByTagName('head')[0],
