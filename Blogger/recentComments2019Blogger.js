@@ -136,6 +136,10 @@ function showRecentComments(json) {
 	tt_cm = total;
 	// console.log(tt_cm);
 }
+$(document).on('click','.rCommOuter li',function(){
+	var id = $(this).data('hash');
+	alert('Work! ID : '+id);
+});
 (function () {
 	var head = document.getElementsByTagName('head')[0],
 		script = document.createElement('script'),
