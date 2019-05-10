@@ -122,7 +122,7 @@ function showRecentComments(json) {
 		content = ("content" in entry[i]) ? entry[i].content.$t.replace(/<br ?\/?>/ig, " ").replace(/<.*?>/g, "").replace(/[<>]/g, "") : "",
 		nt = (co.new_tab_link) ? ' target="_blank"' : '';
 		content = (content.length > co.summary) ? content.substring(0, co.summary) + '&hellip;' : content;
-		skeleton += '<li data-hash="'+hash+'">';
+		skeleton += '<li>';
 		skeleton += '<a class="item1" href="' + profile + '" target="_blank" title="' + name + '"><img src="' + avatar + '"></a>';
 		skeleton += '<a class="item2" href='+link+'>';
 		skeleton += '<span class="rCommHeader"><b>' + name + '</b> mengomentari <b>'+title+'</b></span>';
@@ -136,10 +136,6 @@ function showRecentComments(json) {
 	tt_cm = total;
 	// console.log(tt_cm);
 }
-$(document).on('click','.rCommOuter li',function(){
-	var id = $(this).attr('data-hash');
-	$('html, body').animate({scrollTop: $(id).offset().top - 80}, 1000);
-});
 (function () {
 	var head = document.getElementsByTagName('head')[0],
 		script = document.createElement('script'),
