@@ -134,7 +134,6 @@ function showRecentComments(json) {
 	tt_cm = total;
 	// console.log(tt_cm);
 }
-
 (function () {
 	var head = document.getElementsByTagName('head')[0],
 		script = document.createElement('script'),
@@ -153,3 +152,11 @@ function showRecentComments(json) {
 		head.appendChild(newScript);
 	}, co.interval);
 })();
+$('a').each(function(){
+	var aHash = $(this).prop("hash");
+	if(aHash != null || aHash != '') {
+	  $(this).on('click',function(){
+	    $('html, body').animate({scrollTop: $(aHash).offset().top - 80}, 1000);
+	  });
+	}
+});
