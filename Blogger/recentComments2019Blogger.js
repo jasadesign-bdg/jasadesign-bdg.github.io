@@ -138,7 +138,7 @@ function showRecentComments(json) {
 }
 $(document).on('click','.rCommOuter li',function(){
 	var id = $(this).data('hash');
-	alert('Work! ID : '+id);
+	$('html, body').animate({scrollTop: $(id).offset().top - 80}, 1000);
 });
 (function () {
 	var head = document.getElementsByTagName('head')[0],
