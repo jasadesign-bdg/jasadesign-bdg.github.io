@@ -122,7 +122,7 @@ function showRecentComments(json) {
 		content = (content.length > co.summary) ? content.substring(0, co.summary) + '&hellip;' : content;
 		skeleton += '<li>';
 		skeleton += '<a class="item1" href="' + profile + '" target="_blank" title="' + name + '"><img src="' + avatar + '"></a>';
-		skeleton += '<a class="item2" href='+link+'>';
+		skeleton += '<a class="item2" href='+link+' onclick="$("html, body").animate({scrollTop: $($(this).prop("hash")).offset().top - 80}, 1000);">';
 		skeleton += '<span class="rCommHeader"><b>' + name + '</b> mengomentari <b>'+title+'</b></span>';
 		skeleton += '<span class="rCommText">"' + content + '"<br/><small style="opacity:.8;white-space:nowrap;"><i class="icon ion-logo-twitch" style="font-size:130%;"></i> &nbsp; ' + timeAgo(date) + '</small></span>';
 		skeleton += '</a>';
@@ -152,11 +152,3 @@ function showRecentComments(json) {
 		head.appendChild(newScript);
 	}, co.interval);
 })();
-$('a').each(function(){
-	var aHash = $(this).prop("hash");
-	if(aHash != null || aHash != '') {
-	  $(this).on('click',function(){
-	    $('html, body').animate({scrollTop: $(aHash).offset().top - 80}, 1000);
-	  });
-	}
-});
