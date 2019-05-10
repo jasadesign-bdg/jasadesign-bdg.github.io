@@ -137,9 +137,9 @@ function showRecentComments(json) {
 	// console.log(tt_cm);
 }
 $(document).on('click','.rCommOuter li',function(){
-	$('.blog_notif').removeClass('open');
 	var id = $(this).data('hash');
 	$('html, body').animate({scrollTop: $(id).offset().top - 80}, 1000);
+	$('.blog_notif').removeClass('open');
 });
 (function () {
 	var head = document.getElementsByTagName('head')[0],
