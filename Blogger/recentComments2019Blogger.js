@@ -103,28 +103,28 @@ function showRecentComments(json) {
 	// Just a recent comments widget
 	skeleton = '<ul class="rCommOuter">';
 	for (var i = 0; i < entry.length; i++) {
-		for (var j = 0; j < entry[i].link.length; j++) {
-			if (entry[i].link[j].rel == 'alternate') {
-				link = entry[i].link[j].href;
+		for (var j = 0; j < entry[i].commLink.length; j++) {
+			if (entry[i].commLink[j].rel == 'alternate') {
+				commLink = entry[i].commLink[j].href;
 				break;
 			}
 		}
-		var hash = link.split('#')[1];
+		var hash = commLink.split('#')[1];
 
-		var dash = link.lastIndexOf('/') + 1,
-			dot = link.lastIndexOf('.'),
-			title = link.split('-').join(" ").substring(dash, dot) + '&hellip;';
+		var dash = commLink.lastIndexOf('/') + 1,
+			dot = commLink.lastIndexOf('.'),
+			title = commLink.split('-').join(" ").substring(dash, dot) + '&hellip;';
 		author = entry[i].author[0],
 		name = author.name.$t,
 		avatar = author.gd$image.src.replace(/\/s[0-9]+(\-c|\/)/, "/s" + co.t_w + "-c$1").replace(/http\:\/\/www.google.com\/url\?source\=imglanding(.*?)q\=/i, "").replace(/\.(jpg|jpeg|png|bmp|gif)(.*?)$/i, ".$1"),
 		profile = (author.uri) ? author.uri.$t : "#nope",
 		date = entry[i].gd$extendedProperty[1].value,
 		content = ("content" in entry[i]) ? entry[i].content.$t.replace(/<br ?\/?>/ig, " ").replace(/<.*?>/g, "").replace(/[<>]/g, "") : "",
-		nt = (co.new_tab_link) ? ' target="_blank"' : '';
+		nt = (co.new_tab_commLink) ? ' target="_blank"' : '';
 		content = (content.length > co.summary) ? content.substring(0, co.summary) + '&hellip;' : content;
 		skeleton += '<li>';
 		skeleton += '<a class="item1" href="' + profile + '" target="_blank" title="' + name + '"><img src="' + avatar + '"></a>';
-		skeleton += '<a class="item2" href='+link+'>';
+		skeleton += '<a class="item2" href='+commLink+'>';
 		skeleton += '<span class="rCommHeader"><b>' + name + '</b> mengomentari <b>'+title+'</b></span>';
 		skeleton += '<span class="rCommText">"' + content + '"<br/><small style="opacity:.8;white-space:nowrap;"><i class="icon ion-logo-twitch" style="font-size:130%;"></i> &nbsp; ' + timeAgo(date) + '</small></span>';
 		skeleton += '</a>';
