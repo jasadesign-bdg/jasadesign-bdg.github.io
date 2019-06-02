@@ -73,7 +73,7 @@ function showRecentComments(json) {
         var msPerDay = msPerHour * 24;
         var msPerMonth = msPerDay * 30;
         var msPerYear = msPerDay * 365;
-        var ago = 'yang lalu';
+        var ago = 'lalu';
         var elapsed = current - previous;
         
         if (elapsed < msPerMinute) {
