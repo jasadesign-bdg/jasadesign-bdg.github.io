@@ -152,6 +152,8 @@ function showRecentComments(json) {
 })();
 
 var twLSN = [
+'learncad.online',
+'www.learncad.online',
 '',
 '',
 '',
