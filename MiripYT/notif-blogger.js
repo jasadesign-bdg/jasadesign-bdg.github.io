@@ -154,7 +154,8 @@ function showRecentComments(json) {
 var twLSN = [
 'learncad.online',
 'www.learncad.online',
-'',
+'mirip-youtube.blogspot.com',
+'mirip-youtube.blogspot.co.id',
 '',
 '',
 '',
