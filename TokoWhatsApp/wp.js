@@ -1,4 +1,4 @@
-// https://obfuscator.io/
+//RC4 https://obfuscator.io/
 
 var arrLSN = [
   'localhost',
