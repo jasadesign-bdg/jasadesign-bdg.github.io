@@ -7,4 +7,6 @@ var arrLSN = [
   'bantuban.com',
   'bridaloka.com',
   'www.bridaloka.com',
+  'mediaalfaruq.com',
+  'www.mediaalfaruq.com',
 ];
