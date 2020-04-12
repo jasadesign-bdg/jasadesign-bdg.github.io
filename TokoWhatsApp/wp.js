@@ -11,4 +11,6 @@ var arrLSN = [
   'www.mediaalfaruq.com',
   'griyamuslim.web.id',
   'www.griyamuslim.web.id',
+  'giantindonesia.com',
+  'www.giantindonesia.com',
 ];
