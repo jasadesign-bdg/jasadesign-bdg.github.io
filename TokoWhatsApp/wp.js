@@ -17,4 +17,6 @@ var arrLSN = [
   'www.kolamterpal.net',
   'duniabaju.com',
   'www.duniabaju.com',
+  'varashoilnusantara.com',
+  'www.varashoilnusantara.com',
 ];
