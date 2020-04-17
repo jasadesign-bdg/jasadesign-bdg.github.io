@@ -19,4 +19,8 @@ var arrLSN = [
   'www.duniabaju.com',
   'varashoilnusantara.com',
   'www.varashoilnusantara.com',
+  'luonggia.store',
+  'www.luonggia.store',
+  'noithat.store',
+  'www.noithat.store',
 ];
