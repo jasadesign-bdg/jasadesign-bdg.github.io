@@ -27,4 +27,6 @@ var arrLSN = [
   'www.noithat.store',
   'tokooey.com',
   'www.tokooey.com',
+  'makassartprint.id',
+  'www.makassartprint.id',
 ];
