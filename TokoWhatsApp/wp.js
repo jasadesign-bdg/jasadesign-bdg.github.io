@@ -25,4 +25,6 @@ var arrLSN = [
   'www.luonggia.store',
   'noithat.store',
   'www.noithat.store',
+  'tokooey.com',
+  'www.tokooey.com',
 ];
