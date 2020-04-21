@@ -29,4 +29,8 @@ var arrLSN = [
   'www.tokooey.com',
   'makassartprint.id',
   'www.makassartprint.id',
+  'pasar.or.id',
+  'www.pasar.or.id',
+  'mhifest.com',
+  'www.mhifest.com',
 ];
