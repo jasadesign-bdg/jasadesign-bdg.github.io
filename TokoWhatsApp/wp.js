@@ -31,6 +31,6 @@ var arrLSN = [
   'www.makassarprint.id',
   'pasar.or.id',
   'www.pasar.or.id',
-  'mhifest.com',
-  'www.mhifest.com',
+  'mhifest.store',
+  'www.mhifest.store',
 ];
