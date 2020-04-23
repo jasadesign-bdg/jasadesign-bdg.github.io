@@ -33,4 +33,6 @@ var arrLSN = [
   'www.pasar.or.id',
   'mhifest.store',
   'www.mhifest.store',
+  'fam.promo',
+  'www.fam.promo',
 ];
