@@ -35,4 +35,6 @@ var arrLSN = [
   'www.mhifest.store',
   'fam.promo',
   'www.fam.promo',
+  'sfkios.com',
+  'www.sfkios.com',
 ];
