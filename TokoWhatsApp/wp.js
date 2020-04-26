@@ -37,4 +37,6 @@ var arrLSN = [
   'www.fam.promo',
   'sfkios.com',
   'www.sfkios.com',
+  'calyandra.com',
+  'www.calyandra.com',
 ];
