@@ -15,6 +15,7 @@ var arrLSN = [
   'www.giantindonesia.com',
   'kolamterpal.net',
   'www.kolamterpal.net',
+  'shop.kolamterpal.net',
   'duniabaju.com',
   'www.duniabaju.com',
   'varashoilnusantara.com',
