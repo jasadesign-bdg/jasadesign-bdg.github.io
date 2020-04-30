@@ -40,4 +40,9 @@ var arrLSN = [
   'www.sfkios.com',
   'calyandra.com',
   'www.calyandra.com',
+  'azka.id',
+  'www.azka.id',
+  'shop.azka.id',
+  'store.azka.id',
+  'toko.azka.id',
 ];
