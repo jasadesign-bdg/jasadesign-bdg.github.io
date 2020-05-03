@@ -45,4 +45,6 @@ var arrLSN = [
   'shop.azka.id',
   'store.azka.id',
   'toko.azka.id',
+  'www.pangkep.net',
+  'pangkep.net',
 ];
