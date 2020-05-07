@@ -49,4 +49,6 @@ var arrLSN = [
   'pangkep.net',
   'bikinphotobook.com',
   'www.bikinphotobook.com',
+  'wits-store.tech',
+  'www.wits-store.tech',
 ];
