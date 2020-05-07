@@ -47,4 +47,6 @@ var arrLSN = [
   'toko.azka.id',
   'www.pangkep.net',
   'pangkep.net',
+  'bikinphotobook.com',
+  'www.bikinphotobook.com',
 ];
