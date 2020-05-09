@@ -51,4 +51,8 @@ var arrLSN = [
   'www.bikinphotobook.com',
   'wits-store.tech',
   'www.wits-store.tech',
+  'ubarampe.com',
+  'www.ubarampe.com',
+  'gethukpresiden.id',
+  'www.gethukpresiden.id',
 ];
