@@ -55,4 +55,6 @@ var arrLSN = [
   'www.ubarampe.com',
   'gethukpresiden.id',
   'www.gethukpresiden.id',
+  'oleh-olehjogja.com',
+  'www.oleh-olehjogja.com',
 ];
