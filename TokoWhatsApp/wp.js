@@ -59,4 +59,6 @@ var arrLSN = [
   'www.oleh-olehjogja.com',
   'tokomainan.web.id',
   'www.tokomainan.web.id',
+  'pesanapa.com',
+  'www.pesanapa.com',
 ];
