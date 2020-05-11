@@ -57,4 +57,6 @@ var arrLSN = [
   'www.gethukpresiden.id',
   'oleh-olehjogja.com',
   'www.oleh-olehjogja.com',
+  'tokomainan.web.id',
+  'www.tokomainan.web.id',
 ];
