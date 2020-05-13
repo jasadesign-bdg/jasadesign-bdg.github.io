@@ -61,4 +61,6 @@ var arrLSN = [
   'www.tokomainan.web.id',
   'pesanapa.com',
   'www.pesanapa.com',
+  'nrproduk.com',
+  'www.nrproduk.com',
 ];
