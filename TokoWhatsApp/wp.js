@@ -4,7 +4,7 @@ var arrLSN = [
   'localhost',
   'id.toko-wa.com',
   'www.bantuban.com',
-  'bantuban.com',
+  'bantuban.com'
   'bridaloka.com',
   'www.bridaloka.com',
   'mediaalfaruq.com',
@@ -63,4 +63,6 @@ var arrLSN = [
   'www.pesanapa.com',
   'nrproduk.com',
   'www.nrproduk.com',
+  'baba-ahmed.com',
+  'www.baba-ahmed.com',
 ];
